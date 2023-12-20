@@ -9,34 +9,29 @@ Based on the behaviour of a customer during their tenure with this telecommunica
 1. Importing Libraries
 
 2. Data Cleaning
-   <br> Duplication
-   <br> Missing values
-   <br> Outliers
+   <br> - Duplication
+   <br> - Missing values
+   <br> - Outliers
 
 3. Exploratory Data Analysis
 
 4. Feature Engineering
-   <br> Correlation
-   <br> Encoding
-   <br> Scaling
-   <br> Train test split
+   <br> - Correlation
+   <br> - Encoding
+   <br> - Scaling
+   <br> - Train test split
 
 6. Model Building
-  <br> Base Model Creation
-  <br> Class Imbalance Handling
-  <br> Regularization (Ridge & Lasso)
-  <br> Grid Search Cross Validation
-  <br> 10 Fold Cross Validation
+  <br> - Base Model Creation
+  <br> - Class Imbalance Handling
+  <br> - Regularization (Ridge & Lasso)
+  <br> - Grid Search Cross Validation
+  <br> - 10 Fold Cross Validation
 
 7. Conclusion
 
 ### Conclusion
-- Out of Million records of Lyrics and Comments, we could scrap around 42000 songs for our Analysis of which we used 8650 songs for lyrics and comment analysis
+This analysis was done to obtain the best fit model on this dataset. The grid search selected the optimal hyperparamters for the penalty, solver and c value from the provided values. On using these parameters we observed the model has improved. To build confidence in the result of ths model, a 10 fold was done that gave us an average accuracy of 85%. 
 
-- After scraping for Lyrics we have 8650 records
 
-- The sentiments of the song lyrics are equally distributed across positive and negative.
-
-- Most of the reviews or comments of the song have postive sentiment.
-
-- We found that the sentiment of lyrics and comments need not necessarily be similar.
+This model predicts whether an account of a current customer will continue for the next billing cycle. It uses features like the location of the customer, relationship of the customer with the company, communication activity of the customer on their current plan as well as any complaints they might have submitted. 85% of the time the model is accurate in predicting whether a certain customer with the above traits would close their account or not.
